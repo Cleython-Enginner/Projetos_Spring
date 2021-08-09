@@ -12,6 +12,9 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.List;
 
+
+// Comentario para testar versionamento
+
 @Data
 @Builder
 @AllArgsConstructor
