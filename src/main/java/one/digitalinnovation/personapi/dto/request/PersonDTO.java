@@ -35,10 +35,25 @@ public class PersonDTO {
     @CPF
     private String cpf;
 
+    @NotEmpty
+    private String rg;
+
     @NotNull
     private String birthDate;
+
+    @NotNull
+    private String address;
+
+    @NotNull
+    private String district;
+
+    @NotNull
+    private String city;
 
     @Valid
     @NotEmpty
     private List<PhoneDTO> phones;
+
+    @NotEmpty
+    private String email;
 }

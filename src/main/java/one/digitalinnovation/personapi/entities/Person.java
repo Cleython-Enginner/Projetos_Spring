@@ -37,8 +37,24 @@ public class Person {
     @Column(nullable = false, unique = true)
     private String cpf;
 
+    @Column(nullable = false)
+    private String rg;
+
     private LocalDate birthDate;
+
+    @Column(nullable = false)
+    private String address;
+
+    @Column(nullable = false)
+    private String district;
+
+    @Column(nullable = false)
+    private String city;
 
     @OneToMany(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REMOVE})
     private List<Phone> phones = new ArrayList<>();
+
+    @Column(nullable = false)
+    private String email;
 }
+
